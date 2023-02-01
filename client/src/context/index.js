@@ -5,7 +5,7 @@ const GlobalStateContext = createContext();
 
 const GlobalStateProvider = ({ children }) => {
   const [globalState, setGlobalState] = useState({});
-  const [focusKeyword, setFocusKeyword] = useState("focus");
+  const [focusKeyword, setFocusKeyword] = useState("");
   const [isAtTheBeginning, setIsAtTheBeginning] = useState(false);
   const [isInTheContent, setIsInTheContent] = useState(false);
   const [isInMetaTitle, setIsInMetaTitle] = useState(false);
