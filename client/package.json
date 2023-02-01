@@ -1,7 +1,7 @@
 {
   "name": "tools",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "proxy": "https://seo-tools-theta.vercel.app/",
   "dependencies": {
     "@mantine/rte": "^5.10.0",
