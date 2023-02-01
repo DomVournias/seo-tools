@@ -10,16 +10,15 @@ app.use(express.json());
 app.use("/api", require("./routes/PageSEO_router"));
 app.use("/api", require("./routes/Docs_router"));
 
-// const MODE = config.get("NODE_ENV");
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "./client/build")));
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "./client/build")));
 
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "./", "client", "build", "index.html"))
-  );
-} else {
-  app.get("/", (req, res) => res.send("Please set to production"));
-}
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(__dirname, "./", "client", "build", "index.html"))
+//   );
+// } else {
+//   app.get("/", (req, res) => res.send("Please set to production"));
+// }
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
