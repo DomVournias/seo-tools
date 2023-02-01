@@ -30,6 +30,8 @@ export const Right = styled.aside`
   flex-direction: column;
   position: relative;
   background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
 `;
 
 export const Inner = styled.div`

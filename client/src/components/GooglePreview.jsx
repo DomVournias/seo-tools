@@ -164,6 +164,7 @@ const Input = styled.input`
 
 const TextArea = styled.textarea`
   border-color: #7f868d;
+  height: 4rem;
   border-radius: 4px;
   font-size: 13px;
   line-height: normal;
@@ -172,6 +173,7 @@ const TextArea = styled.textarea`
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.1s linear;
   border: 1px solid #757575;
+  resize: none;
 `;
 
 const Score = styled.span``;

@@ -55,7 +55,7 @@ const InputTools = () => {
             disabled={isDisabled}
             onKeyDown={handleOnKeyDown}
             placeholder={
-              isDisabled ? "Currently you can use one keyword only..." : ""
+              isDisabled ? "Currently you can use only one keyword..." : ""
             }
           />
         </FocusKeyword>
