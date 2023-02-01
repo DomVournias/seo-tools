@@ -2,7 +2,7 @@
   "name": "seo-tools",
   "version": "1.0.0",
   "description": "A web application using Express and React",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js --ignore client",

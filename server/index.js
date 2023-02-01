@@ -11,18 +11,18 @@ app.use("/api", require("./routes/PageSEO_router"));
 app.use("/api", require("./routes/Docs_router"));
 
 // Serve frontend
+app.use(express.static(path.join(__dirname, "../client/build")));
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
-
-  app.get("*", (req, res) =>
-    res.sendFile(
-      path.resolve(__dirname, "../", "client", "build", "index.html")
-    )
+app.get("*", function (_, res) {
+  res.sendFile(
+    path.join(__dirname, "../client/build/index.html"),
+    function (err) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    }
   );
-} else {
-  app.get("/", (req, res) => res.send("Please set to production"));
-}
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
