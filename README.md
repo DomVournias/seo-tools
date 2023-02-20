@@ -23,16 +23,17 @@ This is a web application built with React on the client side and a suite of tec
 	- React Parser
 	- React Icons
 	- Styled Components
-  - React Hot Toast
+ 	- React Hot Toast
 
 -  **Server**
-  - Axios
-  - Cheerio /* Currently not used */
-	- Config
-	- Cors
-	- DotEnv
+	- Nodejs
 	- Express
-	- Concurrently
+  	- Axios
+  	- Cheerio /* Currently not used */
+  	- Config
+  	- Cors
+  	- DotEnv
+  	- Concurrently
 
 
 ### Config
